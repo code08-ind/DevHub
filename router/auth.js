@@ -31,12 +31,12 @@ router.post('/register', async (req, res) => {
                 let transporter = nodemailer.createTransport({
                     service: 'gmail',
                     auth: {
-                        user: 'devhub.info08@gmail.com',
-                        pass: 'rishu08032000'
+                        user: '<email>',
+                        pass: '<password>'
                     }
                 });
                 let mailOptions = {
-                    from: 'devhub.info08@gmail.com',
+                    from: '<email>',
                     to: email,
                     subject: 'Successfully Registered At DevHub!',
                     text: 'Thanks For Registering At DevHub. Find Like Minded Developers At DevHub'
@@ -78,12 +78,12 @@ router.post('/login', async (req, res) => {
                 let transporter = nodemailer.createTransport({
                     service: 'gmail',
                     auth: {
-                        user: 'devhub.info08@gmail.com',
-                        pass: 'rishu08032000'
+                        user: '<email>',
+                        pass: '<password>'
                     }
                 });
                 let mailOptions = {
-                    from: 'devhub.info08@gmail.com',
+                    from: '<email>',
                     to: email,
                     subject: 'Successfully Logined At DevHub!',
                     text: 'You Have Successfully Logined Through DevHub. Find Like Minded Developers At DevHub.'
@@ -127,12 +127,12 @@ router.post('/contact', authenticate, async (req, res) => {
             let transporter = nodemailer.createTransport({
                 service: 'gmail',
                 auth: {
-                    user: 'devhub.info08@gmail.com',
-                    pass: 'rishu08032000'
+                    user: '<email>',
+                    pass: '<password>'
                 }
             });
             let mailOptions = {
-                from: 'devhub.info08@gmail.com',
+                from: '<email>',
                 to: email,
                 subject: 'Message Sent Successfully To DevHub',
                 text: 'You Have Successfully Sent Message To DevHub. We Will Look Into Your Message And See Your Meesage And Try To Implement On It.'
