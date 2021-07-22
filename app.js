@@ -21,10 +21,6 @@ app.use(require('./router/auth.js'));
 
 const PORT = process.env.PORT || 6450;
 
-app.get('/', (req, res) => {
-    res.send("Hello World!");
-});
-
 app.get('/api/usersprofiles', async (req, res) => {
     try {
         const users = await User.find();
