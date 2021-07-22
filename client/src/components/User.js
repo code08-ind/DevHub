@@ -5,7 +5,7 @@ const User = ({ match }) => {
     const [user, setUser] = useState([]);
     useEffect(() => {
         const getData = async () => {
-            const res = await axios.get(`http://localhost:6450/api/usersprofiles/${match.params.id}`);
+            const res = await axios.get(`/api/usersprofiles/${match.params.id}`);
             setUser(res.data);
         }
         getData();

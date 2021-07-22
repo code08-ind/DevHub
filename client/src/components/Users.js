@@ -32,7 +32,7 @@ const Users = () => {
     }
     useEffect(() => {
         const getData = async () => {
-            const res = await axios.get('http://localhost:6450/api/usersprofiles');
+            const res = await axios.get('/api/usersprofiles');
             setUsers(res.data);
         }
         getData();
