@@ -11,10 +11,6 @@ router.use(cookieParser());
 require('../db/conn.js');
 const User = require('../model/userSchema.js');
 
-router.get('/', (req, res) => {
-    res.send("Hello Home");
-});
-
 //! async await
 router.post('/register', async (req, res) => {
     const { name, email, phone, work, image, linkedin, github, portfolio, resume, password, cpassword } = req.body;
